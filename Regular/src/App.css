@@ -37,6 +37,7 @@ body #root .main_container section .sub_container_title {
   background: #4AA3A3;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  margin: 0px;
 }
 body #root .main_container section .sub_container_title label i,
 body #root .main_container section .sub_container_title span i {
@@ -104,6 +105,8 @@ body #root .main_container section.for_previewer #preview {
   display: block;
   padding: 3px 12px;
   transition: 400ms ease-in;
+  background: #C0D8D8;
+  border-radius: 5px;
 }
 body #root .main_container section.for_previewer #preview h1 {
   display: block;
@@ -114,6 +117,9 @@ body #root .main_container section.for_previewer #preview h2 {
 }
 body #root .main_container section.for_previewer #preview h1, body #root .main_container section.for_previewer #preview h2, body #root .main_container section.for_previewer #preview h3, body #root .main_container section.for_previewer #preview pre {
   margin: 15px 0px;
+}
+body #root .main_container section.for_previewer #preview p {
+  padding: 2px 5px;
 }
 body #root .main_container section.for_previewer #preview p code {
   background: #FFF;
@@ -128,6 +134,9 @@ body #root .main_container section.for_previewer #preview p img {
 body #root .main_container section.for_previewer #preview pre {
   background: #FFF;
   padding: 5px;
+}
+body #root .main_container section.for_previewer #preview ul, body #root .main_container section.for_previewer #preview ol {
+  padding: 1px 20px;
 }
 body #root .main_container #edt_expander:checked ~ .for_editor {
   height: 75vh;
@@ -178,6 +187,10 @@ body #root .main_container #prv_expander:checked ~ .for_previewer .sub_container
 body #root .main_container #prv_expander:checked ~ .for_previewer .sub_container_title .fa-down-left-and-up-right-to-center {
   display: inline-block;
   transition: 200ms ease-in;
+}
+body #root .main_container #prv_expander:checked ~ .for_previewer #preview {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 }
 body #root .main_container #prv_expander:checked ~ .for_previewer #preview p img {
   width: 75vw;

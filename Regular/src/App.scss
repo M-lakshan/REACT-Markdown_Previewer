@@ -39,6 +39,7 @@ body {
           background: #4AA3A3;
           border-top-left-radius: 5px;
           border-top-right-radius: 5px;
+          margin: 0px;
 
           label,
           span {
@@ -116,6 +117,8 @@ body {
           display: block;
           padding: 3px 12px;
           transition: 400ms ease-in;
+          background: #C0D8D8;
+          border-radius: 5px;
 
           h1 {
             display: block;
@@ -131,6 +134,8 @@ body {
           }
 
           p {
+            padding: 2px 5px;
+
             code {
               background: #FFF;
               padding: 1px 3px;
@@ -147,6 +152,10 @@ body {
           pre {
             background: #FFF;
             padding: 5px;
+          }
+
+          ul, ol {
+            padding: 1px 20px;
           }
         }
       }
@@ -215,6 +224,9 @@ body {
         }
 
         #preview {
+          border-top-left-radius: 0px;
+          border-top-right-radius: 0px;
+
           p {
             img {
               width: 75vw;
