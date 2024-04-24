@@ -1,8 +1,13 @@
 import React from 'react';
-import ReactMarkdown from 'react-markdown';
+// import ReactMarkdown from 'react-markdown';
+import { marked } from 'marked';
 
 class Preview extends React.Component {
   render() {
+    marked.setOptions({
+      breaks: true
+    })
+
     return (
       <section className="for_previewer">
         <h3 className="sub_container_title">
@@ -12,9 +17,11 @@ class Preview extends React.Component {
             <i className="fa-solid fa-down-left-and-up-right-to-center"></i>
           </label>
         </h3>
-        <div id="preview">
-          <ReactMarkdown>{this.props.markdown}</ReactMarkdown>
-        </div>
+        <div id="preview" dangerouslySetInnerHTML = {
+          {
+            __html: marked(this.props.markdown)
+          }
+        }></div>
       </section>
     );
   }
