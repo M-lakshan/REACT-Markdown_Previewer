@@ -1,7 +1,7 @@
 import React from 'react';
 import Editor from './Editor';
 import Preview from './Preview';
-import './App.css';
+import '../styles/App.css';
 
 class App extends React.Component {
   constructor(props) {
